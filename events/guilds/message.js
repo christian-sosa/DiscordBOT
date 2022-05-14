@@ -2,7 +2,6 @@ require("dotenv").config();
 const prefix = process.env.PREFIX;
 
 module.exports = async (client, discord, msg) => {
-  //console.log(msg.channelId);
   if (msg.author.bot) return;
 
   if (msg.content.startsWith(prefix)) {

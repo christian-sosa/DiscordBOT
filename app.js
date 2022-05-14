@@ -9,6 +9,7 @@ client.commands = new discord.Collection();
 client.events = new discord.Collection();
 
 ["commandHandler", "eventHandler"].forEach((file) => {
+  console.log(file)
   require(`./handlers/${file}`)(client, discord);
 });
 
